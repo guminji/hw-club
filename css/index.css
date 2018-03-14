@@ -116,6 +116,7 @@ body .pop_set {
   min-width: 100%;
   min-height: 100%;
   background: #11151c;
+  display: none;
 }
 body .pop_set .headbox {
   width: 100%;
@@ -154,12 +155,13 @@ body .pop_set .middlebox {
   width: 100%;
   height: 6.4rem;
   background: #11151c;
+  padding-top: 0.2rem;
 }
 body .pop_set .middlebox .content {
   width: 12.72rem;
   height: 5.93rem;
   background: #262d38;
-  margin: 0.2rem auto;
+  margin: 0 auto;
   border-radius: 0.16rem;
 }
 body .pop_set .middlebox .content .content_left {
