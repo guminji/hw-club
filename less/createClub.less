@@ -1,0 +1,43 @@
+html,body{
+    height:100%;
+    width:100%;
+}
+body{
+    background:#11151c;
+}
+#createClub{
+    .leftNav{
+        height:100%;
+        width:2.3rem;
+        background: #2b323d;
+        margin-top:0.03rem;
+        padding-top: 1px;
+        .Tabs{
+            list-style: none;
+            margin-top: 0.24rem;
+            .btn{
+                height:0.83rem;
+                margin: 0 auto;
+                width:2rem;
+                background:url(../images/bg_mh.png);
+                background-size:100% 100%;
+                margin-bottom:0.1rem;
+                &.active{
+                    background:url(../images/bg_mhed.png) 100%;
+                    background-size:100% 100%;
+
+                }
+                &.active:after{
+                    content:'';
+                    display: block;
+                    width: 0;
+                    height: 0;
+                    border-top: 0.4rem solid transparent;
+                    border-bottom: 0.4rem solid transparent;
+                    border-left: 0.6rem solid #2b323d;
+                    margin-left:2.15rem;
+                }
+            }
+        }
+    }
+}
