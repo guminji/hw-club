@@ -1,0 +1,20 @@
+@charset "utf-8";
+/* CSS Document */
+html,body,ul,ol,li,dl,dt,dd,p,h1,h2,h3,h4,h5,h6,a,img,th,td,form,fieldset,iframe,object,pre,code,legend,blockquote,input,textarea{margin:0;padding:0;border:0;outline:0}
+body{ background-color:#fff/*#290232*/;position:relative;/*font-family:"微软雅黑"; */width:100%;height:100%;}
+ol,ul{list-style:none}
+:focus{outline:0}
+strong{font-weight:700}
+address,caption,cite,em,code,dfn,th,var,i,b{font-style:normal;font-weight:400}
+form label{cursor:pointer}
+input,button,textarea{font-family:inherit;font-size:100%}
+textarea{overflow:hidden}
+table{border-collapse:separate}
+caption,th,td{font-weight:400}
+h1,h2,h3,h4,h5,h6{font-weight:400;font-size:100%}
+a{cursor:pointer;text-decoration:none}
+a:hover{text-decoration:none}
+input,a{-webkit-tap-highlight-color:transparent}
+input::-webkit-outer-spin-button,input::-webkit-inner-spin-button{-webkit-appearance:none;margin:0}
+.hide{display:none;}
+.clearfix:after{content:".";display:block;height:0;clear:both;visibility:hidden}
