@@ -692,7 +692,6 @@ body .pop_play .middlebox .content {
   width: 13.34rem;
   height: 6.4rem;
   margin: 0 auto;
-  background: red;
 }
 body .pop_play .middlebox .content .content_left {
   width: 2.7rem;
@@ -731,5 +730,97 @@ body .pop_play .middlebox .content .content_right {
   background: #2b323d;
   margin: 0.2rem;
   float: left;
-  border-radius: 0.2rem;
+  border-radius: 0.1rem;
+}
+body .pop_play .middlebox .content .content_right .listbox {
+  width: 10.1rem;
+  height: 4.2rem;
+  overflow: scroll;
+}
+body .pop_play .middlebox .content .content_right .listbox .ulist {
+  width: 10.1rem;
+  display: block;
+}
+body .pop_play .middlebox .content .content_right .listbox .ulist .playtitle {
+  width: 1.68rem;
+  font-size: 0.28rem;
+  color: #00aeff;
+  line-height: 0.9rem;
+  font-weight: bold;
+  text-align: center;
+  font-family: "微软雅黑";
+  float: left;
+}
+body .pop_play .middlebox .content .content_right .listbox .ulist .playoption {
+  width: 8.17rem;
+  float: left;
+  border-bottom: dashed 1px #525e6f;
+}
+body .pop_play .middlebox .content .content_right .listbox .ulist .playoption .playitem {
+  width: 1.9rem;
+  height: 0.9rem;
+  float: left;
+  margin-right: 0.1rem;
+}
+body .pop_play .middlebox .content .content_right .listbox .ulist .playoption .playitem .icon_check {
+  width: 0.3rem;
+  height: 0.3rem;
+  display: block;
+  margin-top: 0.3rem;
+  float: left;
+}
+body .pop_play .middlebox .content .content_right .listbox .ulist .playoption .playitem .icon_check.radios {
+  background: url(../images/radio_check.png) no-repeat;
+  background-size: 0.3rem 0.3rem;
+}
+body .pop_play .middlebox .content .content_right .listbox .ulist .playoption .playitem .icon_check.radio_check {
+  background: url(../images/radio_checked.png) no-repeat;
+  background-size: 0.3rem 0.3rem;
+}
+body .pop_play .middlebox .content .content_right .listbox .ulist .playoption .playitem .icon_check.boxs {
+  background: url(../images/box_check.png) no-repeat;
+  background-size: 0.3rem 0.3rem;
+}
+body .pop_play .middlebox .content .content_right .listbox .ulist .playoption .playitem .icon_check.box_check {
+  background: url(../images/box_checked.png) no-repeat;
+  background-size: 0.3rem 0.3rem;
+}
+body .pop_play .middlebox .content .content_right .listbox .ulist .playoption .playitem .check_font {
+  width: 1.6rem;
+  height: 0.9rem;
+  font-size: 0.24rem;
+  color: #ffffff;
+  line-height: 0.9rem;
+  text-align: left;
+  text-indent: 0.2rem;
+  font-family: "微软雅黑";
+  float: left;
+}
+body .pop_play .middlebox .content .content_right .save_box {
+  width: 9rem;
+  height: 1.6rem;
+  margin: 0 auto;
+  display: block;
+}
+body .pop_play .middlebox .content .content_right .save_box .btn_save {
+  width: 2.4rem;
+  height: 0.73rem;
+  background: url(../images/btn_save.png) no-repeat;
+  background-size: 2.4rem 0.73rem;
+  display: block;
+  margin-top: 0.5rem;
+  margin-left: 3.3rem;
+  float: left;
+}
+body .pop_play .middlebox .content .content_right .save_box .tip_font {
+  width: 9rem;
+  height: 0.37rem;
+  display: block;
+  float: left;
+  font-size: 0.18rem;
+  color: #98a7bd;
+  line-height: 0.37rem;
+  text-align: center;
+  font-family: "微软雅黑";
+  margin-top: 0.1rem;
 }
