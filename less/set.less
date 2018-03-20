@@ -859,43 +859,64 @@ body{
 								width:2.8rem;
 							}
 						}
-						.ul{
+						.box_ul{
 							width:9.41rem;
 							height:3rem;
-							display:block;
-							overflow:scroll;
+							position:relative;
 							margin:0 auto;
-							li{
+							.ul{
 								width:9.41rem;
-								height:0.5rem;
-								float:left;
-								span{
+								height:3rem;
+								display:none;
+								overflow:scroll;
+								position:absolute;
+								z-index:10000;
+								li{
+									width:9.41rem;
 									height:0.5rem;
-									font-size:0.24rem;
-									color:#b0caf2;
-									line-height:0.50rem;
+									float:left;
+									span{
+										height:0.5rem;
+										font-size:0.24rem;
+										color:#b0caf2;
+										line-height:0.50rem;
+										text-align:center;
+										font-family:"微软雅黑";
+										float:left;
+									}
+									.text0{
+										width:1.54rem;
+									}
+									.text1{
+										width:2.08rem;
+									}
+									.text2{
+										width:2.94rem;
+									}
+									.text3{
+										width:2.8rem;
+									}
+								}
+								li.bg_dif{
+									background:#3e4755;
+									border-radius:0.25rem;
+								}
+								.nodata{
+									width:9.41rem;
+									height:3rem;
+									font-size:0.4rem;
+									color:#ffffff;
+									line-height:3rem;
 									text-align:center;
 									font-family:"微软雅黑";
-									float:left;
-								}
-								.text0{
-									width:1.54rem;
-								}
-								.text1{
-									width:2.08rem;
-								}
-								.text2{
-									width:2.94rem;
-								}
-								.text3{
-									width:2.8rem;
 								}
 							}
-							li.bg_dif{
-								background:#3e4755;
-								border-radius:0.25rem;
+							.ul.click{
+								display:block;
 							}
+							
 						}
+						
 					}
 					.bg_bottom{
 						width:10.1rem;
@@ -903,6 +924,33 @@ body{
 						background:#3a4454;
 						border-radius:0 0 0.1rem 0.1rem;
 						float:left;
+						span{
+							height:0.87rem;
+							font-size:0.24rem;
+							line-height:0.87rem;
+							font-family:"微软雅黑";
+							float:left;
+						}
+						.text0{
+							width:2.15rem;
+							color:#b0caf2;
+							text-align:right;
+						}
+						.text1{
+							width:1.45rem;
+							color:#b0caf2;
+							text-align:left;
+						}
+						.text2{
+							width:1.78rem;
+							color:#b0caf2;
+							text-align:right;
+						}
+						.text3{
+							width:1.25rem;
+							color:#217cb7;
+							text-align:left;
+						}
 					}
 				}
 			}

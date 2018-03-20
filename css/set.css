@@ -943,19 +943,26 @@ body .pop_rank .middlebox .content .content_right .bg_middle .rank_title .text2 
 body .pop_rank .middlebox .content .content_right .bg_middle .rank_title .text3 {
   width: 2.8rem;
 }
-body .pop_rank .middlebox .content .content_right .bg_middle .ul {
+body .pop_rank .middlebox .content .content_right .bg_middle .box_ul {
   width: 9.41rem;
   height: 3rem;
-  display: block;
-  overflow: scroll;
+  position: relative;
   margin: 0 auto;
 }
-body .pop_rank .middlebox .content .content_right .bg_middle .ul li {
+body .pop_rank .middlebox .content .content_right .bg_middle .box_ul .ul {
+  width: 9.41rem;
+  height: 3rem;
+  display: none;
+  overflow: scroll;
+  position: absolute;
+  z-index: 10000;
+}
+body .pop_rank .middlebox .content .content_right .bg_middle .box_ul .ul li {
   width: 9.41rem;
   height: 0.5rem;
   float: left;
 }
-body .pop_rank .middlebox .content .content_right .bg_middle .ul li span {
+body .pop_rank .middlebox .content .content_right .bg_middle .box_ul .ul li span {
   height: 0.5rem;
   font-size: 0.24rem;
   color: #b0caf2;
@@ -964,21 +971,33 @@ body .pop_rank .middlebox .content .content_right .bg_middle .ul li span {
   font-family: "微软雅黑";
   float: left;
 }
-body .pop_rank .middlebox .content .content_right .bg_middle .ul li .text0 {
+body .pop_rank .middlebox .content .content_right .bg_middle .box_ul .ul li .text0 {
   width: 1.54rem;
 }
-body .pop_rank .middlebox .content .content_right .bg_middle .ul li .text1 {
+body .pop_rank .middlebox .content .content_right .bg_middle .box_ul .ul li .text1 {
   width: 2.08rem;
 }
-body .pop_rank .middlebox .content .content_right .bg_middle .ul li .text2 {
+body .pop_rank .middlebox .content .content_right .bg_middle .box_ul .ul li .text2 {
   width: 2.94rem;
 }
-body .pop_rank .middlebox .content .content_right .bg_middle .ul li .text3 {
+body .pop_rank .middlebox .content .content_right .bg_middle .box_ul .ul li .text3 {
   width: 2.8rem;
 }
-body .pop_rank .middlebox .content .content_right .bg_middle .ul li.bg_dif {
+body .pop_rank .middlebox .content .content_right .bg_middle .box_ul .ul li.bg_dif {
   background: #3e4755;
   border-radius: 0.25rem;
+}
+body .pop_rank .middlebox .content .content_right .bg_middle .box_ul .ul .nodata {
+  width: 9.41rem;
+  height: 3rem;
+  font-size: 0.4rem;
+  color: #ffffff;
+  line-height: 3rem;
+  text-align: center;
+  font-family: "微软雅黑";
+}
+body .pop_rank .middlebox .content .content_right .bg_middle .box_ul .ul.click {
+  display: block;
 }
 body .pop_rank .middlebox .content .content_right .bg_bottom {
   width: 10.1rem;
@@ -986,4 +1005,31 @@ body .pop_rank .middlebox .content .content_right .bg_bottom {
   background: #3a4454;
   border-radius: 0 0 0.1rem 0.1rem;
   float: left;
+}
+body .pop_rank .middlebox .content .content_right .bg_bottom span {
+  height: 0.87rem;
+  font-size: 0.24rem;
+  line-height: 0.87rem;
+  font-family: "微软雅黑";
+  float: left;
+}
+body .pop_rank .middlebox .content .content_right .bg_bottom .text0 {
+  width: 2.15rem;
+  color: #b0caf2;
+  text-align: right;
+}
+body .pop_rank .middlebox .content .content_right .bg_bottom .text1 {
+  width: 1.45rem;
+  color: #b0caf2;
+  text-align: left;
+}
+body .pop_rank .middlebox .content .content_right .bg_bottom .text2 {
+  width: 1.78rem;
+  color: #b0caf2;
+  text-align: right;
+}
+body .pop_rank .middlebox .content .content_right .bg_bottom .text3 {
+  width: 1.25rem;
+  color: #217cb7;
+  text-align: left;
 }

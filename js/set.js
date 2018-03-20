@@ -234,6 +234,238 @@ $('.pop_play .btn_save').on('click',function(){
 	console.log('保存更改');
 	$('.pop_play').css('display','none');
 })
+for(var i=0;i<2;i++){
+	$('.pop_rank .content_left .bg_list .btn_item').eq(i).on('click',function(){
+		$(this).addClass('checked');
+		$(this).siblings().removeClass('checked');
+		if($(this).hasClass('num')){
+			for(var j=0;j<2;j++){
+				if($('.pop_rank .content_right .bg_top .btn_item').eq(j).hasClass('checked')){
+					if(j==0){
+						console.log(00)
+						$('.pop_rank .content_right .box_ul .yesNum').addClass('click');
+						$('.pop_rank .content_right .box_ul .yesNum').siblings().removeClass('click');
+					}
+					if(j==1){
+						console.log(01)
+						$('.pop_rank .content_right .box_ul .toyNum').addClass('click');
+						$('.pop_rank .content_right .box_ul .toyNum').siblings().removeClass('click');
+					}
+				}
+			}
+			
+		}
+		if($(this).hasClass('point')){
+			for(var j=0;j<2;j++){
+				if($('.pop_rank .content_right .bg_top .btn_item').eq(j).hasClass('checked')){
+					if(j==0){
+						console.log(10)
+						$('.pop_rank .content_right .box_ul .yesPoint').addClass('click');
+						$('.pop_rank .content_right .box_ul .yesPoint').siblings().removeClass('click');
+					}
+					if(j==1){
+						console.log(11)
+						$('.pop_rank .content_right .box_ul .toyPoint').addClass('click');
+						$('.pop_rank .content_right .box_ul .toyPoint').siblings().removeClass('click');
+					}
+				}
+			}
+			
+		}
+	})
+	$('.pop_rank .content_right .bg_top .btn_item').eq(i).on('click',function(){
+		$(this).addClass('checked');
+		$(this).siblings().removeClass('checked');
+		if($(this).hasClass('yes')){
+			for(var j=0;j<2;j++){
+				if($('.pop_rank .content_left .bg_list .btn_item').eq(j).hasClass('checked')){
+					if(j==0){
+						$('.pop_rank .content_right .box_ul .yesNum').addClass('click');
+						$('.pop_rank .content_right .box_ul .yesNum').siblings().removeClass('click');
+					}
+					if(j==1){
+						$('.pop_rank .content_right .box_ul .yesPoint').addClass('click');
+						$('.pop_rank .content_right .box_ul .yesPoint').siblings().removeClass('click');
+					}
+				}
+			}
+			
+		}
+		if($(this).hasClass('toy')){
+			for(var j=0;j<2;j++){
+				if($('.pop_rank .content_left .bg_list .btn_item').eq(j).hasClass('checked')){
+					if(j==0){
+						$('.pop_rank .content_right .box_ul .toyNum').addClass('click');
+						$('.pop_rank .content_right .box_ul .toyNum').siblings().removeClass('click');
+					}
+					if(j==1){
+						$('.pop_rank .content_right .box_ul .toyPoint').addClass('click');
+						$('.pop_rank .content_right .box_ul .toyPoint').siblings().removeClass('click');
+					}
+				}
+			}
+			
+		}
+	})
+}
 
-
-
+// var dataRank = {
+// 	'clubId':688816,
+// 	'gameId':40294
+// }
+// $.ajax({
+// 	type:'POST',
+// 	url:'/?act=club_club&st=toGetMyClubRankInfo',
+// 	data:dataRank,
+// 	success:function(res){
+// 		console.log(res);
+// 	},
+// 	error:function(xhr,type){
+// 		console.log('xhr'+xhr)
+// 	}
+// })
+var data = {
+	"clubRank": {
+		"roundRank": {
+			"today": [{
+				"user_id": "2038956868",
+				"user_name": "游客_6868",
+				"raw_add_time": "2018-02-05 14:16:03",
+				"n": "2"
+			}, {
+				"user_id": "2038962688",
+				"user_name": "游客",
+				"raw_add_time": "2018-02-05 14:16:03",
+				"n": "2"
+			}, {
+				"user_id": "2038956784",
+				"user_name": "游客_6784",
+				"raw_add_time": "2018-02-05 14:16:03",
+				"n": "2"
+			}, {
+				"user_id": "2038959857",
+				"user_name": "游客_9857",
+				"raw_add_time": "2018-02-05 14:16:03",
+				"n": "2"
+			}],
+			"yestoday": [{
+				"user_id": "2038956784",
+				"user_name": "游客_6784",
+				"raw_add_time": "2018-02-02 20:41:59",
+				"n": "1"
+			}, {
+				"user_id": "2038962688",
+				"user_name": "游客",
+				"raw_add_time": "2018-02-02 20:41:59",
+				"n": "1"
+			}, {
+				"user_id": "2038959857",
+				"user_name": "游客_9857",
+				"raw_add_time": "2018-02-02 20:41:59",
+				"n": "1"
+			}, {
+				"user_id": "2038962686",
+				"user_name": "A薛二疯子",
+				"raw_add_time": "2018-02-02 20:41:59",
+				"n": "1"
+			}]
+		},
+		"scoreRank": {
+			"today": [{
+				"user_id": "2038956784",
+				"user_name": "游客_6784",
+				"raw_add_time": "2018-02-05 14:23:41",
+				"n": "225"
+			}, {
+				"user_id": "2038956868",
+				"user_name": "游客_6868",
+				"raw_add_time": "2018-02-05 14:16:03",
+				"n": "10"
+			}],
+			"yestoday": [{
+				"user_id": "2038962686",
+				"user_name": "A薛二疯子",
+				"raw_add_time": "2018-02-02 20:41:59",
+				"n": "6"
+			}]
+		}
+	},
+	"errorCode": 0,
+	"errorMsg": "SUCCESS"
+}
+if(data.clubRank){
+	if(data.clubRank.roundRank){
+		$('.pop_rank .content_right .box_ul .toyNum').empty();
+		$('.pop_rank .content_right .box_ul .yesNum').empty();
+		var _html0;
+		var _html1;
+		
+		if(data.clubRank.roundRank.today.length>0){
+			for(var i=0;i<data.clubRank.roundRank.today.length;i++){
+				console.log(123)
+				if((i%2)==0){
+					_html0 = '<li><span class="text0">'+(i+1)+'</span><span class="text1">'+data.clubRank.roundRank.today[i].user_name+'</span><span class="text2">'+data.clubRank.roundRank.today[i].raw_add_time+'</span><span class="text3">'+data.clubRank.roundRank.today[i].n+'</span></li>';
+				}else{
+					_html0 = '<li class="bg_dif"><span class="text0">'+(i+1)+'</span><span class="text1">'+data.clubRank.roundRank.today[i].user_name+'</span><span class="text2">'+data.clubRank.roundRank.today[i].raw_add_time+'</span><span class="text3">'+data.clubRank.roundRank.today[i].n+'</span></li>';
+				}
+				console.log(_html0);		
+				$('.pop_rank .content_right .box_ul .toyNum').append(_html0);
+			}
+		}else{
+			_html0 = '<div class="nodata">暂无数据</div>';
+			$('.pop_rank .content_right .box_ul .toyNum').append(_html0);
+		}
+		if(data.clubRank.roundRank.yestoday.length>0){
+			for(var i=0;i<data.clubRank.roundRank.yestoday.length;i++){
+				console.log(1234)
+				if((i%2)==0){
+					_html1 = '<li><span class="text0">'+(i+1)+'</span><span class="text1">'+data.clubRank.roundRank.yestoday[i].user_name+'</span><span class="text2">'+data.clubRank.roundRank.yestoday[i].raw_add_time+'</span><span class="text3">'+data.clubRank.roundRank.yestoday[i].n+'</span></li>';
+				}else{
+					_html1 = '<li class="bg_dif"><span class="text0">'+(i+1)+'</span><span class="text1">'+data.clubRank.roundRank.yestoday[i].user_name+'</span><span class="text2">'+data.clubRank.roundRank.yestoday[i].raw_add_time+'</span><span class="text3">'+data.clubRank.roundRank.yestoday[i].n+'</span></li>';
+				}
+				
+				$('.pop_rank .content_right .box_ul .yesNum').append(_html1);
+			}
+		}else{
+			_html1 = '<div class="nodata">暂无数据</div>';
+			$('.pop_rank .content_right .box_ul .yesNum').append(_html1);
+		}
+		
+	}
+	if(data.clubRank.scoreRank){
+		$('.pop_rank .content_right .box_ul .yesPoint').empty();
+		$('.pop_rank .content_right .box_ul .toyPoint').empty();
+		var _html2;
+		var _html3;
+		if(data.clubRank.scoreRank.today.length>0){
+			for(var i=0;i<data.clubRank.scoreRank.today.length;i++){
+				console.log(123)
+				if((i%2)==0){
+					_html2 = '<li><span class="text0">'+(i+1)+'</span><span class="text1">'+data.clubRank.scoreRank.today[i].user_name+'</span><span class="text2">'+data.clubRank.scoreRank.today[i].raw_add_time+'</span><span class="text3">'+data.clubRank.scoreRank.today[i].n+'</span></li>';
+				}else{
+					_html2 = '<li class="bg_dif"><span class="text0">'+(i+1)+'</span><span class="text1">'+data.clubRank.scoreRank.today[i].user_name+'</span><span class="text2">'+data.clubRank.scoreRank.today[i].raw_add_time+'</span><span class="text3">'+data.clubRank.scoreRank.today[i].n+'</span></li>';
+				}
+				console.log(_html2);		
+				$('.pop_rank .content_right .box_ul .toyPoint').append(_html2);
+			}
+		}else{
+			_html2 = '<div class="nodata">暂无数据</div>';
+			$('.pop_rank .content_right .box_ul .toyPoint').append(_html2);
+		}
+		if(data.clubRank.scoreRank.yestoday.length>0){
+			for(var i=0;i<data.clubRank.scoreRank.yestoday.length;i++){
+				console.log(123)
+				if((i%2)==0){
+					_html3 = '<li><span class="text0">'+(i+1)+'</span><span class="text1">'+data.clubRank.scoreRank.yestoday[i].user_name+'</span><span class="text2">'+data.clubRank.scoreRank.yestoday[i].raw_add_time+'</span><span class="text3">'+data.clubRank.scoreRank.yestoday[i].n+'</span></li>';
+				}else{
+					_html3 = '<li class="bg_dif"><span class="text0">'+(i+1)+'</span><span class="text1">'+data.clubRank.scoreRank.yestoday[i].user_name+'</span><span class="text2">'+data.clubRank.scoreRank.yestoday[i].raw_add_time+'</span><span class="text3">'+data.clubRank.scoreRank.yestoday[i].n+'</span></li>';
+				}
+				console.log(_html3);		
+				$('.pop_rank .content_right .box_ul .yesPoint').append(_html3);
+			}
+		}else{
+			_html3 = '<div class="nodata">暂无数据</div>';
+			$('.pop_rank .content_right .box_ul .yesPoint').append(_html3);
+		}
+	}
+}
