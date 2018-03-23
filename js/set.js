@@ -471,7 +471,99 @@ if(data.clubRank){
 }
 
 
-
+var data1 = {
+	"code": 1,
+	"clubRecord": {
+		"15178118210000498480": {
+			"user_name": ["游客", "游客_6784", "游客_9857", "游客_6868"],
+			"status": ["0", "1", "0", "0"],
+			"score": ["-75", "225", "-75", "-75"],
+			"game_id": "40172",
+			"create_user_name": "游客_6868",
+			"raw_add_time": "2018-02-05 14:23:41",
+			"room_id": "498480",
+			"round_num": 1,
+			"content": {
+				"mode": "2",
+				"lowFlower": {
+					"flower": "5",
+					"low": "5"
+				},
+				"play": ["1", "2", "3", "4", "5"],
+				"top": "-1",
+				"clubId": "429789",
+				"roundNum": {
+					"card": "2",
+					"num": "2"
+				},
+				"type": "3",
+				"number": 4,
+				"desc": "百搭-局数:2-玩法:开宝荒番飞苍蝇无百搭可捉铳无百搭可抢杠-底花:5\/5-模式:8花",
+				"gameName": "1768上海麻将",
+				"appId": "2006"
+			}
+		},
+		"15178113630000498352": {
+			"user_name": ["游客", "游客_6784", "游客_9857", "游客_6868"],
+			"status": ["2", "2", "0", "1"],
+			"score": ["0", "0", "-10", "10"],
+			"game_id": "40172",
+			"create_user_name": "游客_6868",
+			"raw_add_time": "2018-02-05 14:16:03",
+			"room_id": "498352",
+			"round_num": 1,
+			"content": {
+				"mode": "2",
+				"lowFlower": {
+					"flower": "1",
+					"low": "2"
+				},
+				"play": ["1", "2"],
+				"top": "-1",
+				"clubId": "429789",
+				"roundNum": {
+					"card": "2",
+					"num": "8"
+				},
+				"type": "0",
+				"number": 4,
+				"desc": "敲麻-局数:8-玩法:开宝荒番-底花:2\/1-模式:不吃牌",
+				"gameName": "1768上海麻将",
+				"appId": "2006"
+			}
+		},
+		"15175753190000192104": {
+			"user_name": ["游客", "游客_9857", "A薛二疯子", "游客_6784"],
+			"status": ["2", "0", "1", "2"],
+			"score": ["0", "-6", "6", "0"],
+			"game_id": "40172",
+			"create_user_name": "游客_6784",
+			"raw_add_time": "2018-02-02 20:41:59",
+			"room_id": "192104",
+			"round_num": 1,
+			"content": {
+				"lowFlower": {
+					"flower": "1",
+					"low": "1"
+				},
+				"play": ["1", "2"],
+				"top": "-1",
+				"clubId": "429789",
+				"roundNum": {
+					"card": "1",
+					"num": "1"
+				},
+				"type": "1",
+				"number": 4,
+				"desc": "1局 拉西湖",
+				"gameName": "1768上海麻将",
+				"appId": "2006"
+			}
+		}
+	},
+	"errorCode": 0,
+	"errorMsg": "SUCCESS"
+}
 
 
 

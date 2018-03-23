@@ -1282,4 +1282,91 @@ body .pop_detail .content .content_bottom {
   background: #2b323d;
   border-radius: 0.15rem;
   float: left;
+  margin: 0 0.35rem 0.15rem 0.35rem;
+}
+body .pop_detail .content .content_bottom .tail {
+  width: 11.8rem;
+  height: 4.7rem;
+  display: block;
+  margin: 0.2rem 0.4rem;
+}
+body .pop_detail .content .content_bottom .tail .tail_top {
+  width: 11.8rem;
+  height: 0.54rem;
+  float: left;
+}
+body .pop_detail .content .content_bottom .tail .tail_top span {
+  height: 0.54rem;
+  float: left;
+  font-size: 0.26rem;
+  text-align: center;
+  line-height: 0.54rem;
+  color: #ffffff;
+}
+body .pop_detail .content .content_bottom .tail .tail_top .text0 {
+  width: 1.8rem;
+}
+body .pop_detail .content .content_bottom .tail .tail_top .text1 {
+  width: 2.58rem;
+}
+body .pop_detail .content .content_bottom .tail .tail_top .text2 {
+  width: 1.7rem;
+}
+body .pop_detail .content .content_bottom .tail .tail_top .text3 {
+  width: 1.7rem;
+}
+body .pop_detail .content .content_bottom .tail .tail_top .text4 {
+  width: 1.7rem;
+}
+body .pop_detail .content .content_bottom .tail .tail_top .text5 {
+  width: 1.7rem;
+}
+body .pop_detail .content .content_bottom .tail .tail_bottom {
+  width: 11.8rem;
+  height: 4rem;
+  float: left;
+  overflow: scroll;
+}
+body .pop_detail .content .content_bottom .tail .tail_bottom li {
+  width: 11.8rem;
+  height: 0.5rem;
+  float: left;
+  list-style-type: none;
+}
+body .pop_detail .content .content_bottom .tail .tail_bottom li span {
+  height: 0.5rem;
+  float: left;
+  font-size: 0.24rem;
+  text-align: center;
+  line-height: 0.5rem;
+}
+body .pop_detail .content .content_bottom .tail .tail_bottom li .text0 {
+  width: 1.8rem;
+  color: #b0caf2;
+}
+body .pop_detail .content .content_bottom .tail .tail_bottom li .text1 {
+  width: 2.58rem;
+  color: #b0caf2;
+}
+body .pop_detail .content .content_bottom .tail .tail_bottom li .text2 {
+  width: 1.7rem;
+}
+body .pop_detail .content .content_bottom .tail .tail_bottom li .text3 {
+  width: 1.7rem;
+}
+body .pop_detail .content .content_bottom .tail .tail_bottom li .text4 {
+  width: 1.7rem;
+}
+body .pop_detail .content .content_bottom .tail .tail_bottom li .text5 {
+  width: 1.7rem;
+}
+body .pop_detail .content .content_bottom .tail .tail_bottom li .yellow {
+  color: #fff600;
+}
+body .pop_detail .content .content_bottom .tail .tail_bottom li .green {
+  color: #37b300;
+}
+body .pop_detail .content .content_bottom .tail .tail_bottom .bg_item {
+  background: #3e4755;
+  border-radius: 0.25rem;
 }
