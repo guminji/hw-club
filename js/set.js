@@ -472,97 +472,171 @@ if(data.clubRank){
 
 
 var data1 = {
-	"code": 1,
-	"clubRecord": {
-		"15178118210000498480": {
-			"user_name": ["游客", "游客_6784", "游客_9857", "游客_6868"],
-			"status": ["0", "1", "0", "0"],
-			"score": ["-75", "225", "-75", "-75"],
-			"game_id": "40172",
-			"create_user_name": "游客_6868",
-			"raw_add_time": "2018-02-05 14:23:41",
-			"room_id": "498480",
-			"round_num": 1,
-			"content": {
-				"mode": "2",
-				"lowFlower": {
-					"flower": "5",
-					"low": "5"
-				},
-				"play": ["1", "2", "3", "4", "5"],
-				"top": "-1",
-				"clubId": "429789",
-				"roundNum": {
-					"card": "2",
-					"num": "2"
-				},
-				"type": "3",
-				"number": 4,
-				"desc": "百搭-局数:2-玩法:开宝荒番飞苍蝇无百搭可捉铳无百搭可抢杠-底花:5\/5-模式:8花",
-				"gameName": "1768上海麻将",
-				"appId": "2006"
-			}
-		},
-		"15178113630000498352": {
-			"user_name": ["游客", "游客_6784", "游客_9857", "游客_6868"],
-			"status": ["2", "2", "0", "1"],
-			"score": ["0", "0", "-10", "10"],
-			"game_id": "40172",
-			"create_user_name": "游客_6868",
-			"raw_add_time": "2018-02-05 14:16:03",
-			"room_id": "498352",
-			"round_num": 1,
-			"content": {
-				"mode": "2",
-				"lowFlower": {
-					"flower": "1",
-					"low": "2"
-				},
-				"play": ["1", "2"],
-				"top": "-1",
-				"clubId": "429789",
-				"roundNum": {
-					"card": "2",
-					"num": "8"
-				},
-				"type": "0",
-				"number": 4,
-				"desc": "敲麻-局数:8-玩法:开宝荒番-底花:2\/1-模式:不吃牌",
-				"gameName": "1768上海麻将",
-				"appId": "2006"
-			}
-		},
-		"15175753190000192104": {
-			"user_name": ["游客", "游客_9857", "A薛二疯子", "游客_6784"],
-			"status": ["2", "0", "1", "2"],
-			"score": ["0", "-6", "6", "0"],
-			"game_id": "40172",
-			"create_user_name": "游客_6784",
-			"raw_add_time": "2018-02-02 20:41:59",
-			"room_id": "192104",
-			"round_num": 1,
-			"content": {
-				"lowFlower": {
-					"flower": "1",
-					"low": "1"
-				},
-				"play": ["1", "2"],
-				"top": "-1",
-				"clubId": "429789",
-				"roundNum": {
-					"card": "1",
-					"num": "1"
-				},
-				"type": "1",
-				"number": 4,
-				"desc": "1局 拉西湖",
-				"gameName": "1768上海麻将",
-				"appId": "2006"
-			}
+	"recordList": [{
+		"userList": [{
+			"nickname": "游客",
+			"score": "-75"
+		}, {
+			"nickname": "游客_6784",
+			"score": "225"
+		}, {
+			"nickname": "游客_9857",
+			"score": "-75"
+		}, {
+			"nickname": "游客_6868",
+			"score": "-75"
+		}],
+		"roomId": "498480",
+		"gameId": 40172,
+		"raw_add_time": "2018-02-05 14:23:41",
+		"create_user_name": "游客_6868",
+		"round_num": 1,
+		"content": {
+			"mode": "2",
+			"lowFlower": {
+				"flower": "5",
+				"low": "5"
+			},
+			"play": ["1", "2", "3", "4", "5"],
+			"top": "-1",
+			"clubId": "429789",
+			"roundNum": {
+				"card": "2",
+				"num": "2"
+			},
+			"type": "3",
+			"number": 4,
+			"desc": "百搭-局数:2-玩法:开宝荒番飞苍蝇无百搭可捉铳无百搭可抢杠-底花:5\/5-模式:8花",
+			"gameName": "1768上海麻将",
+			"appId": "2006"
 		}
-	},
+	}, {
+		"userList": [{
+			"nickname": "游客",
+			"score": "0"
+		}, {
+			"nickname": "游客_6784",
+			"score": "0"
+		}, {
+			"nickname": "游客_9857",
+			"score": "-10"
+		}, {
+			"nickname": "游客_6868",
+			"score": "10"
+		}],
+		"roomId": "498352",
+		"gameId": 40172,
+		"raw_add_time": "2018-02-05 14:16:03",
+		"create_user_name": "游客_6868",
+		"round_num": 1,
+		"content": {
+			"mode": "2",
+			"lowFlower": {
+				"flower": "1",
+				"low": "2"
+			},
+			"play": ["1", "2"],
+			"top": "-1",
+			"clubId": "429789",
+			"roundNum": {
+				"card": "2",
+				"num": "8"
+			},
+			"type": "0",
+			"number": 4,
+			"desc": "敲麻-局数:8-玩法:开宝荒番-底花:2\/1-模式:不吃牌",
+			"gameName": "1768上海麻将",
+			"appId": "2006"
+		}
+	}, {
+		"userList": [{
+			"nickname": "游客",
+			"score": "0"
+		}, {
+			"nickname": "游客_9857",
+			"score": "-6"
+		}, {
+			"nickname": "A薛二疯子",
+			"score": "6"
+		}, {
+			"nickname": "游客_6784",
+			"score": "0"
+		}],
+		"roomId": "192104",
+		"gameId": 40172,
+		"raw_add_time": "2018-02-02 20:41:59",
+		"create_user_name": "游客_6784",
+		"round_num": 1,
+		"content": {
+			"lowFlower": {
+				"flower": "1",
+				"low": "1"
+			},
+			"play": ["1", "2"],
+			"top": "-1",
+			"clubId": "429789",
+			"roundNum": {
+				"card": "1",
+				"num": "1"
+			},
+			"type": "1",
+			"number": 4,
+			"desc": "1局 拉西湖",
+			"gameName": "1768上海麻将",
+			"appId": "2006"
+		}
+	}],
 	"errorCode": 0,
 	"errorMsg": "SUCCESS"
+}
+if(data1){
+	$('.pop_record .content_bottom .ul').empty();
+	if(data1.recordList.length>0){
+		var recordHtml1;
+		var recordHtml2;
+		for(var i=0;i<data1.recordList.length;i++){
+			recordHtml1 = '<li><span class="li_left"><div class="li_top"><span class="text0">房间号：'+data1.recordList[i].roomId+'</span><span class="text1">时间：'+data1.recordList[i].raw_add_time+'</span><span class="text2">'+data1.recordList[i].content.desc+'</span></div><div class="li_bottom"></div></span><span class="li_right"></span></li>'
+			$('.pop_record .content_bottom .ul').append(recordHtml1);
+			var userList = data1.recordList[i].userList;
+			userList.sort(function(a,b){return b.score-a.score});
+			console.log(userList)
+			for(var j=0;j<userList.length;j++){
+				if(parseInt(userList[0].score)>=0){
+					recordHtml2 = '<span class="text0"></span><span class="text1">'+userList[0].nickname+'</span><span class="text2 yellow">'+userList[0].score+'</span>';
+				}else{
+					recordHtml2 = '<span class="text0"></span><span class="text1">'+userList[0].nickname+'</span><span class="text2 green">'+userList[0].score+'</span>';
+				}
+				if(parseInt(userList[1].score)>=0){
+					recordHtml2 += '<span class="text3">'+userList[1].nickname+'</span><span class="text4 yellow">'+userList[1].score+'</span>';
+				}else{
+					recordHtml2 += '<span class="text3">'+userList[1].nickname+'</span><span class="text4 green">'+userList[1].score+'</span>';
+				}
+				if(parseInt(userList[2].score)>=0){
+					recordHtml2 += '<span class="text5">'+userList[2].nickname+'</span><span class="text6 yellow">'+userList[2].score+'</span>';
+				}else{
+					recordHtml2 += '<span class="text5">'+userList[2].nickname+'</span><span class="text6 green">'+userList[2].score+'</span>';
+				}
+				if(parseInt(userList[3].score)>=0){
+					recordHtml2 += '<span class="text7">'+userList[3].nickname+'</span><span class="text8 yellow">'+userList[3].score+'</span>';
+				}else{
+					recordHtml2 += '<span class="text7">'+userList[3].nickname+'</span><span class="text8 green">'+userList[3].score+'</span>';
+				}
+				
+				
+			}
+			console.log(recordHtml2)
+			$('.pop_record .content_bottom .ul li').eq(i).find('.li_bottom').append(recordHtml2);
+			$('.pop_record .content_bottom .ul li').eq(i).find('.li_right').on('click',function(){
+				console.log($(this).siblings('.li_left').find('.li_top .text0').html().split('：')[1]);
+				var roomId = $(this).siblings('.li_left').find('.li_top .text0').html().split('：')[1];
+				
+			})
+		}
+
+	}else{
+		var recordHtml0 = '<div class="nodata">暂无数据</div>';
+		$('.pop_record .content_bottom .ul').append(recordHtml0);
+	}
 }
 
 

@@ -1037,7 +1037,7 @@ body .pop_record {
   min-width: 100%;
   min-height: 100%;
   background: #11151c;
-  display: none;
+  display: block;
   position: absolute;
   z-index: 10000;
 }
@@ -1160,6 +1160,7 @@ body .pop_record .middlebox .content .content_bottom .ul li .li_left .li_top .te
 }
 body .pop_record .middlebox .content .content_bottom .ul li .li_left .li_top .text2 {
   width: 4rem;
+  overflow: hidden;
 }
 body .pop_record .middlebox .content .content_bottom .ul li .li_left .li_bottom {
   width: 11.1rem;
@@ -1170,7 +1171,7 @@ body .pop_record .middlebox .content .content_bottom .ul li .li_left .li_bottom 
 body .pop_record .middlebox .content .content_bottom .ul li .li_left .li_bottom span {
   float: left;
   font-size: 0.28rem;
-  text-align: left;
+  text-align: right;
   line-height: 0.58rem;
 }
 body .pop_record .middlebox .content .content_bottom .ul li .li_left .li_bottom .text0 {
@@ -1221,6 +1222,12 @@ body .pop_record .middlebox .content .content_bottom .ul li .li_left .li_bottom 
   height: 0.58rem;
   color: #ffc000;
 }
+body .pop_record .middlebox .content .content_bottom .ul li .li_left .li_bottom .yellow {
+  color: #fff600;
+}
+body .pop_record .middlebox .content .content_bottom .ul li .li_left .li_bottom .green {
+  color: #37b300;
+}
 body .pop_record .middlebox .content .content_bottom .ul li .li_right {
   width: 0.29rem;
   height: 0.53rem;
@@ -1243,7 +1250,7 @@ body .pop_detail {
   min-width: 100%;
   min-height: 100%;
   background: #11151c;
-  display: block;
+  display: none;
   position: absolute;
   z-index: 10005;
 }
