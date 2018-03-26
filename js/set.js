@@ -629,7 +629,7 @@ if(data1){
 			$('.pop_record .content_bottom .ul li').eq(i).find('.li_right').on('click',function(){
 				console.log($(this).siblings('.li_left').find('.li_top .text0').html().split('：')[1]);
 				var roomId = $(this).siblings('.li_left').find('.li_top .text0').html().split('：')[1];
-				
+
 			})
 		}
 
@@ -640,9 +640,143 @@ if(data1){
 }
 
 
+var data2 = {
+	"details": [{
+		"userList": [{
+			"nickName": "游客_6868",
+			"roundId": "159384",
+			"score": "-75",
+			"status": "0",
+			"raw_add_time": "2018-02-05 14:23:23"
+		}, {
+			"nickName": "游客_9857",
+			"roundId": "159384",
+			"score": "-75",
+			"status": "0",
+			"raw_add_time": "2018-02-05 14:23:23"
+		}, {
+			"nickName": "游客_6784",
+			"roundId": "159384",
+			"score": "225",
+			"status": "1",
+			"raw_add_time": "2018-02-05 14:23:23"
+		}, {
+			"nickName": "游客",
+			"roundId": "159384",
+			"score": "-75",
+			"status": "0",
+			"raw_add_time": "2018-02-05 14:23:23"
+		}]
+	},
+	{
+		"userList": [{
+			"nickName": "游客_6868",
+			"roundId": "159384",
+			"score": "-75",
+			"status": "0",
+			"raw_add_time": "2018-02-05 14:23:23"
+		}, {
+			"nickName": "游客_9857",
+			"roundId": "159384",
+			"score": "-75",
+			"status": "0",
+			"raw_add_time": "2018-02-05 14:23:23"
+		}, {
+			"nickName": "游客_6784",
+			"roundId": "159384",
+			"score": "225",
+			"status": "1",
+			"raw_add_time": "2018-02-05 14:23:23"
+		}, {
+			"nickName": "游客",
+			"roundId": "159384",
+			"score": "-75",
+			"status": "0",
+			"raw_add_time": "2018-02-05 14:23:23"
+		}]
+	}],
+	"common": {
+		"roomId": "498480",
+		"desc": "",
+		"gameName": "",
+		"roundNum": 55
+	},
+	"errorCode": 0,
+	"errorMsg": "SUCCESS"
+}
+if(data2){
+	if(data2.details){
+		$('.pop_detail .content_bottom .tail_top').empty();
+		$('.pop_detail .content_bottom .tail_bottom').empty();
+		if(data2.details.length>0){
+			var detailslen = data2.details.length;
+			var detailhtml0;
+			var detailhtml1;
+			detailhtml0 = '<span class="text0">序号</span><span class="text1">对战时间</span><span class="text2">'+data2.details[0].userList[0].nickName+'</span><span class="text3">'+data2.details[0].userList[0].nickName+'</span><span class="text4">'+data2.details[0].userList[0].nickName+'</span><span class="text5">'+data2.details[0].userList[0].nickName+'</span>';
+			$('.pop_detail .content_bottom .tail_top').append(detailhtml0);
+			for(var i=0;i<detailslen;i++){
+				var ulist = data2.details[i].userList;
+				ulist.sort(function(a,b){return b.score-a.score});
+				for(var j=0;j<ulist.length;j++){
+					if((i%2)==0){
+						detailhtml1 = '<li class="bg_item"><span class="text0">'+(i+1)+'</span><span class="text1">'+ulist[j].raw_add_time+'</span>';
+							if(parseInt(ulist[0].score)>0){
+								detailhtml1 += '<span class="text2 yellow">'+ulist[0].score+'</span>';
+							}else{
+								detailhtml1 += '<span class="text2 green">'+ulist[0].score+'</span>';
+							}
+							if(parseInt(ulist[1].score)>0){
+								detailhtml1 += '<span class="text3 yellow">'+ulist[1].score+'</span>';
+							}else{
+								detailhtml1 += '<span class="text3 green">'+ulist[1].score+'</span>';
+							}
+							if(parseInt(ulist[2].score)>0){
+								detailhtml1 += '<span class="text4 yellow">'+ulist[2].score+'</span>';
+							}else{
+								detailhtml1 += '<span class="text4 green">'+ulist[2].score+'</span>';
+							}
+							if(parseInt(ulist[3].score)>0){
+								detailhtml1 += '<span class="text5 yellow">'+ulist[3].score+'</span></li>';
+							}else{
+								detailhtml1 += '<span class="text5 green">'+ulist[3].score+'</span></li>';
+							}
+					}else{
+						detailhtml1 = '<li><span class="text0">'+(i+1)+'</span><span class="text1">'+ulist[j].raw_add_time+'</span>';
+							if(parseInt(ulist[0].score)>0){
+								detailhtml1 += '<span class="text2 yellow">'+ulist[0].score+'</span>';
+							}else{
+								detailhtml1 += '<span class="text2 green">'+ulist[0].score+'</span>';
+							}
+							if(parseInt(ulist[1].score)>0){
+								detailhtml1 += '<span class="text3 yellow">'+ulist[1].score+'</span>';
+							}else{
+								detailhtml1 += '<span class="text3 green">'+ulist[1].score+'</span>';
+							}
+							if(parseInt(ulist[2].score)>0){
+								detailhtml1 += '<span class="text4 yellow">'+ulist[2].score+'</span>';
+							}else{
+								detailhtml1 += '<span class="text4 green">'+ulist[2].score+'</span>';
+							}
+							if(parseInt(ulist[3].score)>0){
+								detailhtml1 += '<span class="text5 yellow">'+ulist[3].score+'</span></li>';
+							}else{
+								detailhtml1 += '<span class="text5 green">'+ulist[3].score+'</span></li>';
+							}
+					}
+					
 
-
-
+				}
+				$('.pop_detail .content_bottom .tail_bottom').append(detailhtml1);
+			}
+		}
+	}
+	if(data2.common){
+		$('.pop_detail .content .content_top').empty();
+		var detailhtml2;
+		detailhtml2 = '<span class="text0">房间号：'+data2.common.roomId+'</span><span class="text1">游戏局数：'+data2.common.roundNum+'</span><span class="text2">游戏玩法：'+data2.common.gameName+'</span>'
+		$('.pop_detail .content .content_top').append(detailhtml2);
+	}
+}
 
 
 
